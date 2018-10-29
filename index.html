@@ -6,17 +6,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/nice-select.css">
+    <link rel="stylesheet" href="/css/custom-style.css">
 
-    <title>Hello, world!</title>
+    <title>Legal Match</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start flex-wrap">
+            <img src="img/logo.png" alt="logo">
+            <p class="text-uppercase brand-color pl-2 align-bottom logo-subtext align-self-end">find the right lawyer now</p>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+            <ul class="promote-list mb-0 pl-0">
+              <li>No fee to present your case</li>
+              <li>Choose from  lawyers in your area</li>
+              <li>A 100% confidential service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 pt-4">
+            <h1 class="text-white mb-1">Find a Lawyer for your Legal Issue</h1>
+            <h3 class="text-white">Fast, Free and Confidential</h3>
+          </div>
+        </div>
 
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label class="text-white" for="zipCodeInput">Enter Zip Code or City:</label>
+                  <div class="input-wrapper">
+                    <div class="input-group-text text-white rounded-circle text-center orange-num">1</div>
+                    <input type="text" class="form-control" id="zipCodeInput" aria-describedby="emailHelp" placeholder="Does not have to be where you live">
+                  </div>
+
+                <label class="text-white mt-4" for="zipCodeInput">Choose a category:</label>
+                  <div class="input-wrapper">
+                    <div class="input-group-text text-white rounded-circle text-center orange-num">2</div>
+                    <select class="custom-select  select-box" id="selectCat">
+                      <option value="" disabled selected hidden>Click to choose a legal category</option>
+                      <option value="1">Family</option>
+                      <option value="2">Criminal Defense</option>
+                      <option value="3">Business</option>
+                      <option value="3">Personal Injury</option>
+                      <option value="3">Bankruptcy and Finance</option>
+                      <option value="3">Products & Services</option>
+                      <option value="3">Employment</option>
+                      <option value="3">Real Estate</option>
+                      <option value="3">Immigration</option>
+                      <option value="3">Wills, Trusts & Estates</option>
+                      <option value="3">Government</option>
+                      <option value="3">Intellectual Property</option>
+                    </select>
+                  </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 testimonial-wrapper mt-5">
+            <h4 class="testimonial-heading text-white font-weight-light">Clients review LegalMatch lawyers</h4>
+            <ul class="list-group list-group-flush list-testimonial">
+              <li class="list-group-item">
+                <div class="row">
+                <div class="profile-area text-center col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                  <img src="img/mitchell_img.png">
+                  <h5 class="name text-white mb-0">Mitchell M.</h5>
+                  <p class="address mb-0">Cherry Hill, NJ</p>
+                </div>
+                <div class="testi-content col-sm-12 col-md-8 col-lg-8 col-xl-9">
+                  <h5 class="text-white float-left">Family Law</h5>
+                  <ul class="rating float-left ml-1 ml-sm-4">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                  </ul>
+                  <div class="clearfix"></div>
+                  <p class="font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ... </p>
+                  <a href="#firt-testi" class="float-right review_link" data-toggle="modal">Read Review</a>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                <div class="profile-area text-center col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                  <img src="img/joel_c_img.png">
+                  <h5 class="name text-white mb-0">Joel C.</h5>
+                  <p class="address mb-0">Little Rock, AK</p>
+                </div>
+                <div class="testi-content col-sm-12 col-md-8 col-lg-8 col-xl-9">
+                  <h5 class="text-white float-left">Job & Employment Law</h5>
+                  <ul class="rating float-left ml-1 ml-sm-4">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                  </ul>
+                  <div class="clearfix"></div>
+                  <p class="font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ... </p>
+                  <a href="#" class="float-right review_link">Read Review</a>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                <div class="profile-area text-center col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                  <img src="img/bridfita_img.png">
+                  <h5 class="name text-white mb-0">Brigida R.</h5>
+                  <p class="address mb-0">Dallas, TX</p>
+                </div>
+                <div class="testi-content col-sm-12 col-md-8 col-lg-8 col-xl-9">
+                  <h5 class="text-white float-left">Family Law</h5>
+                  <ul class="rating float-left ml-1 ml-sm-4">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                  </ul>
+                  <div class="clearfix"></div>
+                  <p class="font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ... </p>
+                  <a href="#" class="float-right review_link">Read Review</a>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---- Modal ----->
+    <div class="modal fade" id="firt-testi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Client Review</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="img/mitchell_img.png" class="float-left mr-3">
+            <h4 class="name text-dark mb-0">Mitchell M.</h4>
+            <p class="address mb-0 text-muted">Cherry Hill, NJ</p>
+            <h5>Family Law</h5>
+            <h4 class="rating-label rating-modal">Rating<small>(29 users)</small></h4>
+            <ul class="rating ml-1 ml-sm-4 rating-modal mt-1 mb-0">
+              <li class="active"><i class="material-icons">star</i></li>
+              <li class="active"><i class="material-icons">star</i></li>
+              <li class="active"><i class="material-icons">star</i></li>
+              <li class="active"><i class="material-icons">star</i></li>
+              <li ><i class="material-icons">star</i></li>
+            </ul>
+            <div class="line-hr mb-2 mt-2"></div>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Overall
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Respond in timely manner
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Answer questions clearly
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Understood needs
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Gave complete and clear information
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Knowledgable in legal area
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Good value for money
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Would hire again
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Would recommend to friend
+                <span class="badge">
+                  <ul class="rating ml-1 ml-sm-4 mt-1 mb-0">
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li class="active"><i class="material-icons">star</i></li>
+                    <li ><i class="material-icons">star</i></li>
+                  </ul>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.custom-select').niceSelect();
+      let listcurrent = $('.nice-select .current').text();
+      let selectPlaceholder = $('.nice-select .list .disabled').text();
+      $('.nice-select .current').css("color", "rgba(78,85,92,.5");
+      $('.nice-select .list').on('click', 'li',function(){
+          $('.nice-select .current').css("color", "#000");
+      });
+    });
+    </script>
   </body>
 </html>

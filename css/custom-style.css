@@ -1,0 +1,288 @@
+/****** Standard ********/
+body{
+  font-family: 'Gotham Medium';
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+@font-face {
+    font-family: 'Gotham Bold', sans-serif;
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Light', sans-serif;
+    src: url('../fonts/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium', sans-serif;
+    src: url('../fonts/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book', sans-serif;
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.brand-color{
+  color: #001f5a;
+}
+a:hover{
+  color: #fbd243;
+  text-decoration: none;
+}
+input[type="text"], .select-box{
+    border-radius: 50px;
+    padding: 2.063rem;
+    padding-left: 4.5rem !important;
+    width: 95%;
+    background: #f2f4f7;
+    font-size: .9rem;
+    border: 10px transparent;
+}
+/*.select-box{
+  padding: 0;
+  height: 68px;
+  background: #f2f4f7 url(../img/dropdown_arrow.png) no-repeat right 1.8rem center;
+}*/
+.form-control::-webkit-input-placeholder { color: rgba(78,85,92,.5); }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: rgba(78,85,92,.5); }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: rgba(78,85,92,.5); }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: rgba(78,85,92,.5); }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: rgba(78,85,92,.5); }  /* Microsoft Edge */
+.select-box .disabled{
+  display: none;
+}
+.nice-select.select-box {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.nice-select:after{
+    height: 10px;
+    width: 10px;
+    right: 25px;
+    top: 45%;
+}
+.nice-select .list {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 9px 2px #4c4c4c;
+    padding-top: 1.5rem;
+}
+.nice-select.select-box span.current {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+}
+.nice-select .option {
+    text-indent: 2rem;
+}
+
+.select-box:focus, input[type="text"]:focus{
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 0 10px .2rem rgba(128,189,255,.5);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+.input-wrapper{
+  position: relative;
+}
+.orange-num {
+    height: 30px;
+    width: 30px;
+    background-color: #d68d00;
+    border: 0;
+    position: absolute;
+    top: 17px;
+    left: 1rem;
+    z-index: 999;
+}
+/** custom **/
+/** header **/
+header{
+  padding: 1.05rem 0;
+}
+.logo-subtext{
+  font: 800 .8rem "Gotham Medium", sans-serif;
+  margin-bottom: 0.7rem !important;
+}
+.promote-list li{
+  list-style: none;
+  font-size: .9rem;
+}
+.promote-list li:before{
+  content: url(../img/check_mark.png);
+  width: 11px;
+  height: 13px;
+  padding-right: .3em;
+}
+/** end header **/
+#main-content{
+  background-image: url(../img/main_content_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 2rem 0;
+}
+#main-content h1{
+  font-family: "Gotham Light";
+}
+.input-group .orange-num-circle{
+    position: absolute;
+    z-index: 99;
+}
+.input-group .orange-num-circle span.input-group-text {
+    padding: 2px 12px;
+    background-color: #d68d00;
+    border: 0;
+}
+.testimonial-heading{
+  font-family: 'Gotham Light', sans-serif;
+  font-size: 1.3rem;
+}
+/******* testimonials *****************/
+.list-testimonial li.list-group-item {
+    background-color: transparent;
+}
+h5.name {
+    font-size: 1em;
+}
+.address{
+    font-family: 'Gotham Light', sans-serif;
+    font-size: .8rem;
+    color: #dadada;
+}
+.testi-content p {
+  color: #e4e4e4;
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 0.8rem;
+}
+.testi-content h5{
+  font-size: 1rem;
+}
+.rating li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.rating{
+  padding: 0;
+}
+.rating li i.material-icons {
+    color: grey;
+    font-size: 1rem;
+}
+.rating li.active i.material-icons {
+    color: #d89108;
+  }
+.review_link {
+    color: #fbd243;
+    font-family: "Gotham Book", sans-serif;
+    font-size: .8rem;
+}
+.review_link:after{
+  content: url(../img/book_icon.png);
+  padding-left: .5rem;
+}
+.list-group-item:first-child {
+    border: 0;
+}
+.list-group-item{
+      border: 1px solid rgba(255,255,255,.125);
+      padding: 1.2rem 1.25rem;
+}
+
+/*** modal **/
+.modal-title {
+    font-family: "Gotham Book", sans-serif;
+    font-size: 1.7rem;
+}
+.modal-header, .modal-body {
+    border-bottom: 1px solid #bdbdbd;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1px;
+}
+.line-hr{
+  border-bottom: 1px solid #bdbdbd;
+  border-radius: 1px;
+}
+.modal-body{
+    border-bottom: 0;
+}
+.modal-body h5 {
+    font-size: 1.1rem;
+}
+h4.rating-label {
+    font-family: "Gotham Book", sans-serif;
+}
+.rating-label small {
+    font-size: 1rem;
+}
+.rating-modal {
+    display: inline-block;
+    vertical-align: top;
+}
+.rating-modal li i.material-icons {
+    font-size: 1.4rem;
+}
+.modal-body li.list-group-item {
+    padding: 0 0;
+}
+.modal-body .list-group-item:first-child {
+    font-weight: 600;
+}
+.modal-body .list-group-item {
+    border: 0;
+    font-family: "Gotham Meduim", sans-serif;
+    font-size: 1.rem;
+}
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {...}
+
+/* Extra Small Devices, Phones equivalent to class xs */
+@media only screen and (min-width : 480px) {...}
+
+/* Small Devices, Tablets equivalent to class sm */
+@media only screen and (min-width : 768px) {...}
+
+/* Medium Devices, Desktops equivalent to class md */
+@media only screen and (min-width : 992px) {
+  header{
+      padding: .9rem 0;
+  }
+  .container {
+    padding: 0 3.75rem;
+  }
+  .testimonial-wrapper{
+      margin-top: -2rem !important;
+  }
+}
+/* Large Devices, Wide Screens equivalent to class lg */
+@media only screen and (min-width : 1200px) {
+  .container {
+      max-width: 1220px;
+  }
+}
